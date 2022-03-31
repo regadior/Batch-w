@@ -8,3 +8,4 @@ echo.
 echo Hola mundo
 echo.
 echo pulsaa cualquira tecla para salir...
+pause>null
