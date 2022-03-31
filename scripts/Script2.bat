@@ -7,7 +7,7 @@ set /p numero2= Introduza outro numero:
 echo.
 echo.
 set /a resultado=%numero1%+%numero2%
-echo o resultado Ã© %resultado%
+echo o resultado ‚ %resultado%
 echo.
 echo prema unha tecla para continuar
 pause>null
