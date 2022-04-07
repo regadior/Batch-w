@@ -10,7 +10,7 @@ set /a resultado=%numero1%+%numero2%
 echo o resultado ‚ %resultado%
 echo.
 echo pulsa una tecla para continuar
-pause>null
+pause > null
 rem liberar variables
 set numero1=
 set numero2=
