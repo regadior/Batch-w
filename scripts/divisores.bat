@@ -1,42 +1,43 @@
-@echo OFF
-cls 
+
+@ECHO OFF
+cls
+
 :NUM
-set /p num= Introduce un numero entre 1 y 999
+SET /p num= Introduza un nÃºmero enteiro entre 1 e 999: 
 
-if %num% gtr 999(
-    echo.
-    echo numero invalido
-    goto NUM
-)
-
-if %num% lss 1(
-    echo.
-    echo numero invalido
-    goto NUM
+IF %num% GTR 999 (
+    ECHO.
+    ECHO N£mero inv ¡lido
+    GOTO NUM
 ) 
-set div=1
+
+IF %num% LSS 1 (
+    ECHO.
+    ECHO N£mero inv ¡lido
+    GOTO NUM
+) 
+ 
+SET div=1
+set /a mistad=%num%/2
 :BUCLE
-set /a resto=%num%%%div%
-if %resto% equ 0(
+SET /a resto=%num%%%div%
+IF %resto% equ 0 (
     echo %div%
+) 
+
+IF %div% equ %mitad% (
+    GOTO FIN
 )
-if %div% equ %mitad%(
-    goto fin
-)
-set / a div=%div%+1(
-    goto bucle
-)
-:Fin
+
+set /a div=%div%+1
+GOTO BUCLE
+
+:FIN
+ECHO %num%
 set resto=
 set div=
 set num=
 set mitad=
-echo
-echo pulsa una tecla
-pause > null
-
-
-
-
-
-
+ECHO.
+ECHO Prema calqueira tecra para salir...
+PAUSE > NUL
